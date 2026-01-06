@@ -1,19 +1,16 @@
 # Student Grade Calculator
 
 
-def calculate_grade(avg):
-    if 90 <= avg <= 100:
-        return "S"
-    elif 80 <= avg <= 89:
+def calculate_grade(marks):
+    if marks >= 90:
         return "A"
-    elif 65 <= avg <= 79:
+    elif marks >= 75:
         return "B"
-    elif 50 <= avg <= 64:
+    elif marks >= 50:
         return "C"
-    elif 40 <= avg <= 49:
-        return "D"
     else:
         return "F"
+
 
 def main():
     # Accept student details
